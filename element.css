@@ -26,6 +26,14 @@ h2 {
   font-size: inherit;
 }
 
+p:not(:first-of-type) {
+  margin-block-start: 0;
+}
+
+p:not(:last-of-type) {
+  margin-block-end: 0;
+}
+
 :any-link {
   text-decoration-style: dotted;
   text-decoration-thickness: .1em;
