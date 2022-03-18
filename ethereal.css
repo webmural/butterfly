@@ -1,6 +1,6 @@
 ::selection {
-  background: darkviolet;
-  color: gold;
+  background: #200222;
+  color: coral;
 }
 
 :root {
@@ -27,5 +27,5 @@
 
 mark {
   color: #11111d;
-  background: magenta;
+  background: coral;
 }
