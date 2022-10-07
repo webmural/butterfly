@@ -1,31 +1,25 @@
 ::selection {
-  background: #200222;
-  color: coral;
+  background: indigo;
+  color: orange;
 }
 
 :root {
-  color: #200222;
-  background: skyblue;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    background: deepskyblue;
-  }
-}
-
-@media (prefers-contrast: less) {
-  :root {
-    color: #33113d;
-  }
+  color: midnightblue;
+  background-color: deepskyblue;
+  background-image:
+    linear-gradient(.801turn, transparent, transparent, transparent, yellow, transparent),
+    linear-gradient(.303turn, yellow, yellow, greenyellow, aquamarine, transparent, orchid, blueviolet, hotpink, mediumblue);
 }
 
 :any-link {
-  color: #50a;
-  outline-color: #50a;
+  color: indigo;
+  background-color: mistyrose;
+  background-image: linear-gradient(.6turn, yellow, transparent, transparent, transparent, greenyellow);
+  outline-color: navy;
+  text-shadow: 3em 3em 1em salmon;
 }
 
-mark {
-  color: #11111d;
-  background: coral;
+.swoon {
+  background: hotpink;
+  background-image: linear-gradient(.2turn, salmon, hotpink);
 }
