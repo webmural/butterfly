@@ -1,6 +1,6 @@
 html {
   font-family: sans-serif;
-  font-size: calc(1em + 1vmin + 2vmax);
+  font-size: max(3ex, 3vmin + 3vmax);
 }
 
 body {
@@ -8,10 +8,11 @@ body {
   display: flex;
   flex-flow: column;
   margin: auto;
+  overflow-wrap: anywhere;
 }
 
 article {
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 ul {
@@ -20,10 +21,26 @@ ul {
 
 h1 {
   margin: 0;
+  display: table;
 }
 
 h2 {
   font-size: inherit;
+  display: table;
+}
+
+p {
+  display: table;
+}
+
+a {
+  display: inline-block;
+  padding: 1ex;
+  padding-inline-start: 3rem;
+  padding-inline-end: 1em;
+  margin-inline-start: -2rem;
+  margin-inline-end: -2rem;
+  margin-block: 2ex;
 }
 
 p:not(:first-of-type) {
@@ -35,12 +52,13 @@ p:not(:last-of-type) {
 }
 
 :any-link {
+  overflow-wrap: anywhere;
   text-decoration-style: dotted;
-  text-decoration-thickness: .1em;
+  text-decoration-thickness: .2em;
 }
 
 :any-link:hover {
-  text-decoration-style: solid;
+  text-decoration-style: double;
 }
 
 :focus {
